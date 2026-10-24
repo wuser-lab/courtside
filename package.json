@@ -1,0 +1,16 @@
+{
+  "name": "courtside-tennis",
+  "version": "1.1.0",
+  "private": true,
+  "description": "A local-first tennis match and video movement analysis studio.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/engine.js && node --check dist/video-studio.js && node --check dist/video-metrics.js && node --check dist/pose-worker.js"
+  }
+}
